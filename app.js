@@ -1,6 +1,5 @@
 const express = require("express");
 const path = require("path");
-const port = 8000;
 const app = express();
 var mongoose= require('mongoose');
 const bodyParser = require("body-parser")
@@ -63,10 +62,13 @@ app.post('/contact',(req,res)=>{
     // res.status(200).render('Contact.pug');
 })
 //agar post request ko express se handle krwana chahte hai aur app.post ka use nhi krna chahte then aapko body parser install krna padega
-
+let port=process.env.PORT;
+if(port==null || port==""){
+    port=4000;
+}
 //Start the server
-,app.listen(port, ()=>{
-    console.log('the application started successfully on port 8000');
+app.listen(port, ()=>{
+    console.log('App listening');
 })
 
 
