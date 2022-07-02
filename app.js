@@ -64,7 +64,7 @@ app.post('/contact',(req,res)=>{
 //agar post request ko express se handle krwana chahte hai aur app.post ka use nhi krna chahte then aapko body parser install krna padega
 let port=process.env.PORT;
 if(port==null || port==""){
-    port=4000;
+    port=8000;
 }
 //Start the server
 app.listen(port, ()=>{
