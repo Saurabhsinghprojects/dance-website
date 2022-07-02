@@ -4,7 +4,7 @@ const port = 8000;
 const app = express();
 var mongoose= require('mongoose');
 const bodyParser = require("body-parser")
-mongoose.connect('mondodb://localhost/contactDance',{useNewUrlParser:true});
+mongoose.connect('mongodb+srv://dancewebsite:Dance@cluster0.ldllr.mongodb.net/?retryWrites=true&w=majority',{useNewUrlParser:true});
 
 
 
