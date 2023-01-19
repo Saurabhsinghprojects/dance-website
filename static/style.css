@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100&display=swap');
+/* i have used google fonts select the family you want (make sure to click select this style) then go to the box icon in it there will be import option */
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+}
+/* this is called reset isse ye fayda hota hai ki faltu ke gaps and errors nhi aate */
+
+#navbar{
+    background-color: rgb(255, 6, 110);
+    padding:17px 14px;
+    
+    font-family: 'Blinker', sans-serif;
+   
+}
+#logo{
+      
+    margin:-15px 1px;
+    /* filter: invert(1); */
+     /* very imp to note par mene nhi kia kyunki color white ho jaa raha tha isse */
+}
+
+#navbar ul{
+       display: flex;
+       flex-direction: row;
+       /* justify-content: center;   */
+       /* justify content: center is used to put content in centre */
+       align-items: center;
+}
+#navbar li{
+    list-style: none;
+  
+}
+
+#navbar li a{
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+    padding: 7px 38px;
+    /* note padding di hai margin nhi */
+}
+#navbar li a:hover{
+    color:black;
+}
+#IntroSection{
+    padding-bottom: 16px;
+    /* to make it a flex box */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    /* taaki flex box item column me aaye  */
+    /* justify content:center se flex box ke items x axis me center pr aagaye and align items se y-axis pe center pr aagaye */
+        color: rgb(243, 14, 14);
+        font-family: 'Redressed', cursive;
+        /* introsection me ab jo bhi cheez aaegi uska color white ho jayega */
+        background: center/cover no-repeat url('/static/bg.jpg');
+          height:300px;
+          background-color: red;
+          font-size: 35px;
+}
+#IntroSection div.small{
+    font-size: 27px;
+}
+#MissionSection{
+    height:315px; 
+    padding-top: 15px;
+    margin: auto;
+    width: 98%;
+}
+#MissionSection h2{
+    font-family: 'Blinker', sans-serif;
+    text-align: center;
+    font-size: 34px;
+    
+}
+/* .card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+.card-img{
+    height: 100px;
+    padding:0px 84px;
+    margin:12px 12px;
+    align-items: center;
+
+}
+.card-img img{
+    height: inherit;    
+}
+#SponsorSection{
+    font-family: 'Blinker', sans-serif;
+    padding-top: 15px;
+    height:300px;
+    background-color: #557087;
+}
+#SponsorSection h2{
+    font-size: 34px;
+    text-align: center;
+    /* text-align center x axis me center kr dega */
+}
+.card{
+    display: inline-block;
+/* display: inline-block se ek hi line me aajaenge .it is used jab hame inline ki width set krni ho(shayad)*/
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 25%;
+    margin: 23px 40px;
+   height: 209px;
+}
+
+.card h3{
+    text-align: center;
+    margin-top: 10px;
+}
+#footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    height: 60px;
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Blinker', sans-serif;
+}
+.card-content{
+    padding-left:28px;
+}
+/* font size rem me pehle likha tha then px kr diya mujhe exactly nhi pata ki kab rem use kre and kab pixel */
+/* #allsponsors{
+    display:flex;
+    flex-direction: row;
+}
+.sponsorimage img{
+    height:180px;
+    width:180px;
+    margin-left:160px;
+    margin-top:20px;
+} */
+#sponsors{
+    height: 205px;
+    max-width: 1000px;
+    margin:27px auto;
+
+}
+.spImage{
+    height:80%;
+    margin:20px;
+}

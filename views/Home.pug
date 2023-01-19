@@ -1,0 +1,48 @@
+extends Base.pug 
+block scripts
+  script(src='/static/index.js')
+block style 
+    style  
+            include ../static/style.css
+block content 
+        Section#IntroSection 
+            div  Welcome to Saurabh's Dance academy 
+            div.small Eat Sleep Dance Repeat 
+        Section#MissionSection 
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-img
+                        img(src="../static/imp1.jpg")
+                div.card-content
+                        p this is the best dance academy of the universe 
+            div.card
+                h3 Dance the way you like 
+                div.card-img
+                        img(src="../static/imp2.jpg")
+                div.card-content
+                        p Make your own signature moves
+            div.card
+                h3 Expert Teaching  
+                div.card-img
+                        img(src="../static/1.png")
+                div.card-content
+                        p Get best guidance from dance experts     
+        Section#SponsorSection 
+            h2 Our Sponsors
+            //- div#allsponsors
+            //-     div.sponsorimage
+            //-         img(src="../static/skype.jpg", alt="skype")
+            //-     div.sponsorimage
+            //-         img(src="../static/google.jpg", alt="google")
+            //-     div.sponsorimage
+            //-         img(src="../static/amazon.jpg", alt="amazon")
+            //-     div.sponsorimage
+            //-         img(src="../static/facebook.jpg", alt="facebook")  
+            //- upar wala mera tarika tha
+            div#sponsors
+                img(src="../static/skype.jpg", alt="skype" class="spImage")
+                img(src="../static/Google.jpg", alt="Google" class="spImage")
+                img(src="../static/facebook.jpg", alt="facebook" class="spImage")
+                img(src="../static/amazon.jpg", alt="amazon" class="spImage")
+

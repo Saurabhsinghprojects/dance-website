@@ -1,0 +1,66 @@
+doctype html
+html 
+    title Saurabh's Dance Academy 
+    head
+        style  
+            include ../static/style.css 
+        //- "../"means jaha pe index.pug us file se ek kadam bahar aao then static/ ka matlab hai static name ke folder me hogi file style.css
+        //- the space before of the head, style ,include is called indent and also to come directly under the previous line tag then press tab
+        //- | is used to represent as it is like below "this" is represented as it is if we write | this 
+    body 
+        nav#navbar
+            ul
+                div#logo
+                    img(src="../static/logo.png", alt="image is not loaded", height="50px",width="50px" )
+                   
+                li #[a(href="/") Home] 
+                li #[a(href="/") About] 
+                li #[a(href="/") Services] 
+                li #[a(href="/") Class Info] 
+                li #[a(href="/") Contact Us] 
+        Section#IntroSection 
+            div  Welcome to Saurabh's Dance academy 
+            div.small Eat Sleep Dance Repeat 
+        Section#MissionSection 
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-img
+                        img(src="../static/imp1.jpg")
+                div.card-content
+                        p this is the best dance academy of the universe 
+            div.card
+                h3 Dance the way you like 
+                div.card-img
+                        img(src="../static/imp2.jpg")
+                div.card-content
+                        p Make your own signature moves
+            div.card
+                h3 Expert Teaching  
+                div.card-img
+                        img(src="../static/1.png")
+                div.card-content
+                        p Get best guidance from dance experts     
+        Section#SponsorSection 
+            h2 Our Sponsors
+            //- div#allsponsors
+            //-     div.sponsorimage
+            //-         img(src="../static/skype.jpg", alt="skype")
+            //-     div.sponsorimage
+            //-         img(src="../static/google.jpg", alt="google")
+            //-     div.sponsorimage
+            //-         img(src="../static/amazon.jpg", alt="amazon")
+            //-     div.sponsorimage
+            //-         img(src="../static/facebook.jpg", alt="facebook")  
+            //- upar wala mera tarika tha
+            div#sponsors
+                img(src="../static/skype.jpg", alt="skype" class="spImage")
+                img(src="../static/Google.jpg", alt="Google" class="spImage")
+                img(src="../static/facebook.jpg", alt="facebook" class="spImage")
+                img(src="../static/amazon.jpg", alt="amazon" class="spImage")
+
+        footer#footer 
+            | Copyright © 2021 SaurabhDanceAcademy.com | All rights  reserved                   
+        script 
+            include ../static/index.js 
+//- make whole website in 100% zoom so give font and other sizes according to it and not while zoomed in or out (for zoom in/out ctrl +-)
